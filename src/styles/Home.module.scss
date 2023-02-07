@@ -1,1 +1,21 @@
 @use './partials/all' as *;
+
+.home {
+  margin: auto;
+  margin-top: 4rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  font-size: 1.75rem;
+}
+
+.alt1 {
+  color: $text-1;
+
+}
+
+.alt2 {
+  color: $text-2;
+}
