@@ -1,0 +1,21 @@
+@use './partials/all' as *;
+
+.header {
+  position: sticky;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+
+  &List {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &Item {
+    color: white;
+    text-decoration: none;
+  }
+}
