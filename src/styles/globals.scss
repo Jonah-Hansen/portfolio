@@ -1,3 +1,8 @@
 @use './partials/reset';
 @use './partials/typography';
 @use './partials/all' as *;
+
+body {
+  background-color: $bg-primary;
+  color: white;
+}
