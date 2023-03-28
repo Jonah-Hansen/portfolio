@@ -4,7 +4,68 @@
 
 body {
   background-color: $bg-primary;
-  background-image: url('/images/starfield.svg');
   color: white;
   font-family: BebasNeue, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.stars {
+  width: 100%;
+  height: 100%;
+  background: url('/images/starfield.svg');
+  background-size: 320px;
+}
+
+.planets {
+  aspect-ratio: 1;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: '';
+    aspect-ratio: 1;
+    width: 30vw;
+    background: url('/images/planet1.svg') no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -5vh;
+    right: -50px;
+  }
+
+  &::before {
+    content: '';
+    transform: scale(-1, -1);
+    aspect-ratio: 1;
+    width: 20vw;
+    background: url('/images/planet1.svg') no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50vh;
+    left: 30px;
+  }
+}
+
+.big-planet {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+
+  &::before {
+    content: '';
+    aspect-ratio: 1;
+    width: 100%;
+    background: url('/images/Atmosphere.svg') no-repeat 40% 55%;
+    background-size: 80vw;
+    position: absolute;
+    filter: blur(75px);
+    // opacity: .75;
+  }
+
+  &::after {
+    content: '';
+    aspect-ratio: 1;
+    width: 100%;
+    background: url('/images/planet.svg') no-repeat 75% 50%;
+    background-size: 110vw;
+    position: absolute;
+  }
 }
