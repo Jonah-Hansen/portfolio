@@ -1,7 +1,8 @@
+import styles from '@/styles/Contact.module.scss';
 
 export default function Contact() {
   return (
-    <section>
+    <section className={styles.contact} >
       <h2>Contact Me!</h2>
       <form >
         <label>

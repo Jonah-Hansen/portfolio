@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import styles from '@/styles/About.module.scss';
+
 
 export default function About() {
   // const [clipPath, setClipPath] = useState<string>('polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)');
@@ -26,7 +27,7 @@ export default function About() {
   // style={{ clipPath }} ref={clipRef}
 
   return (
-    <section >
+    <section className={styles.about} >
       <h2>About Me</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium cupiditate commodi, facere corporis vel culpa et hic cum. Quo quia vel, nemo repellat mollitia nobis id fuga vitae veniam aliquam.</p>
 
