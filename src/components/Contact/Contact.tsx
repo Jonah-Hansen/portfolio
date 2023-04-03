@@ -2,10 +2,10 @@ import { useHeaderClip } from '@/hooks/useHeaderClip';
 import styles from '@/styles/Contact.module.scss';
 
 export default function Contact() {
-  const [clipPath, clipRef] = useHeaderClip()
+  const [WebkitMaskImage, clipRef] = useHeaderClip()
 
   return (
-    <section className={styles.contact} style={{ clipPath }} ref={clipRef} >
+    <section className={styles.contact} style={{ WebkitMaskImage }} ref={clipRef} >
       <h2>Contact Me!</h2>
       <form >
         <label>

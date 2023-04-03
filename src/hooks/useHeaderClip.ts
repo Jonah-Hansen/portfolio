@@ -1,7 +1,7 @@
 import { RefObject, useLayoutEffect, useRef, useState } from "react";
 
 export const useHeaderClip = (): [string, RefObject<HTMLElement>] => {
-  const [clipPath, setClipPath] = useState<string>(`inset(0)`);
+  const [maskImage, setMask] = useState<string>(`none`);
   const clipRef = useRef<HTMLElement>(null)
 
   useLayoutEffect(() => {
@@ -9,13 +9,13 @@ export const useHeaderClip = (): [string, RefObject<HTMLElement>] => {
     if (container) {
       const handleScroll = () => {
         const elementPos = clipRef.current?.offsetTop || 0
-        const top = Math.max(0, container.scrollTop - elementPos + (document.querySelector('header')?.clientHeight || 0));
-        setClipPath(`inset(${top}px 0 0 0)`);
+        const top = Math.max(0, container.scrollTop - elementPos + 80 + (document.querySelector('header')?.clientHeight || 0));
+        setMask(`linear-gradient(to bottom, transparent 0%, transparent ${top - 100}px, black ${top}px, black 100%)`);
       };
       handleScroll(); // initial calculation on mount
       container.addEventListener('scroll', handleScroll);
       return () => container.removeEventListener('scroll', handleScroll);
     }
   }, [])
-  return [clipPath, clipRef]
+  return [maskImage, clipRef]
 }
