@@ -18,23 +18,25 @@ export default function HomePage() {
       </Head>
       <main >
 
-        <Header />
+        <div className="parallax-container">
+          <Header />
 
-        <div className='stars' />
+          <div className='stars' />
 
-        <div className='planets' />
+          <div className='planets' />
 
-        <div className='big-planet' />
+          <div className='big-planet' />
 
-        <Home />
+          <Home />
 
-        <About />
+          <About />
 
-        <Work />
+          <Work />
 
-        <Contact />
+          <Contact />
 
-        <Footer />
+          <Footer />
+        </div>
       </main>
     </>
   )
