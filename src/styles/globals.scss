@@ -11,6 +11,7 @@ body {
 .parallax-container {
   width: 100vw;
   height: 100vh;
+  position: relative;
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
@@ -63,15 +64,47 @@ body {
 }
 
 .big-planet {
-  width: 200%;
-  height: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  width: 600px;
   position: absolute;
-  top: 0;
-  left: -50%;
+  top: 400px;
+  left: 50%;
   z-index: -1;
-  background: url('/images/planet.svg') no-repeat;
-  background-position: top 50% left 44.5%;
-  background-size: contain;
   transform-style: preserve-3d;
-  transform: translateZ(-10px) scale(2);
+  transform: translateZ(-10px) scale(2) translateX(-25%);
+
+  &::before {
+    content: '';
+    aspect-ratio: 1;
+    width: 100%;
+    background: url('/images/Atmosphere.svg') no-repeat top 50% left 49%;
+    background-size: 60%;
+    filter: blur(75px);
+    position: absolute;
+  }
+
+  &::after {
+    content: '';
+    aspect-ratio: 1;
+    width: 100%;
+    background: url('/images/planet.svg') no-repeat top 50% left 27%;
+    background-size: 90%;
+    position: absolute;
+  }
+}
+
+.astronaut {
+  aspect-ratio: 1;
+  height: 75px;
+  position: absolute;
+  top: 275px;
+  left: 50%;
+  transform-style: preserve-3d;
+  z-index: -1;
+  transform: translateZ(-10px) scale(2) translateX(-40%);
+  background: url('/images/Astronauty.svg') no-repeat center;
+  background-size: contain;
 }

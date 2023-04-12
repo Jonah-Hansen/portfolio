@@ -27,6 +27,8 @@ export default function HomePage() {
 
           <div className='big-planet' />
 
+          <div className='astronaut' />
+
           <Home />
 
           <About />
