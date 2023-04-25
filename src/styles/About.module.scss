@@ -4,3 +4,10 @@
   margin: auto;
   height: 100vh;
 }
+
+.skills {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}

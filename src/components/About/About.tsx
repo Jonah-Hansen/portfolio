@@ -1,9 +1,14 @@
 import { useHeaderClip } from '@/hooks/useHeaderClip';
 import styles from '@/styles/About.module.scss';
+import Image from 'next/image';
+
 
 
 export default function About() {
   const [WebkitMaskImage, clipRef] = useHeaderClip()
+
+  const skills = ['html', 'css', 'javaScript', 'typeScript', 'python', 'react', 'nextJS', 'nodeJS', 'expressJS', 'electron', 'mySQL', 'firebase', 'supabase', 'jest', 'postman', 'git', 'github', 'githubActions', 'figma', 'sass', 'tailwindCSS', 'materialUI', 'bootstrap', 'vsCode', 'linux', 'raspberryPi', 'arduino', 'vercel', 'netlify', 'wordpress']
+
 
   return (
     <section className={styles.about} style={{ WebkitMaskImage }} ref={clipRef} >
@@ -19,8 +24,14 @@ export default function About() {
         Overall, I&apos;m excited to join a team where I can use my skills and continue growing as a developer.
       </p>
 
-      <h2>Skills</h2>
-      <div>skills here</div>
+      <h2>Tech that I am experienced with:</h2>
+      <div className={styles.skills}>
+        <>
+          {skills.map((skill, index) =>
+            <Image key={index} src={`/images/skills/${skill}.svg`} alt={skill} title={skill} width={50} height={50} />
+          )}
+        </>
+      </div>
     </section>
   )
 }
