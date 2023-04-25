@@ -7,16 +7,16 @@ export default function Contact() {
   return (
     <section className={styles.contact} style={{ WebkitMaskImage }} ref={clipRef} >
       <h2>Contact Me!</h2>
-      <form >
-        <label>
+      <form className={styles.form} >
+        <label >
           Email:
           <input type="text" />
         </label>
-        <label>
+        <label >
           Subject:
           <input type="text" />
         </label>
-        <label>
+        <label >
           Message:
           <textarea />
         </label>
