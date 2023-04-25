@@ -18,7 +18,7 @@ export default function About() {
       </p>
 
       <p>
-        I&apos;m a problem solver at heart, and I get a kick out of finding creative solutions to complex challenges. One of my strengths is how quickly I can learn and adapt to new tools and technologies, and I&apos;m always eager to take on new challenges. When I&apos;m not busy coding, playing video games, and exploring self-sufficient living through activities like wine-making and gardening.
+        I&apos;m a problem solver at heart, and I get a kick out of finding creative solutions to complex challenges. One of my strengths is how quickly I can learn and adapt to new tools and technologies, and I&apos;m always eager to take on new challenges. When I&apos;m not busy coding, I enjoy playing video games and exploring self-sufficient living through activities like wine-making and gardening.
       </p>
       <p>
         Overall, I&apos;m excited to join a team where I can use my skills and continue growing as a developer.

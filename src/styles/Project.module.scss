@@ -1,0 +1,25 @@
+@use './partials/all' as *;
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.preview {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+
+  &::before {
+    content: '';
+    aspect-ratio: 1;
+    width: 100%;
+    background: url('/images/Atmosphere.svg') no-repeat top 50% left 49%;
+    background-size: 50%;
+    position: absolute;
+    filter: blur(30px);
+  }
+}

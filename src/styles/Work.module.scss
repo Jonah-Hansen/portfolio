@@ -4,3 +4,10 @@
   margin: auto;
   height: 100vh;
 }
+
+.projects {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  justify-content: center;
+}
