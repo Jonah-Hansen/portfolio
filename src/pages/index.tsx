@@ -19,6 +19,7 @@ export default function HomePage() {
       <main >
 
         <div className="parallax-container">
+
           <Header />
 
           <div className='stars' />
