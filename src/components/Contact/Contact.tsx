@@ -5,7 +5,7 @@ export default function Contact() {
   const [WebkitMaskImage, clipRef] = useHeaderClip()
 
   return (
-    <section className={styles.contact} style={{ WebkitMaskImage }} ref={clipRef} >
+    <section id='contact' className={styles.contact} style={{ WebkitMaskImage }} ref={clipRef} >
       <h2>Contact Me!</h2>
       <form className={styles.form} >
         <label >

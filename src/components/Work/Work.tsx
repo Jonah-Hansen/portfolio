@@ -8,7 +8,7 @@ export default function Work() {
   const projects = ['everyday Todo', 'Easy Instrumentals', 'Pool Passes App']
 
   return (
-    <section className={styles.work} style={{ WebkitMaskImage }} ref={clipRef} >
+    <section id='work' className={styles.work} style={{ WebkitMaskImage }} ref={clipRef} >
       <h2>Projects</h2>
       <ul className={styles.projects}>
         {projects.map((project, index) =>

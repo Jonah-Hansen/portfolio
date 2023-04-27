@@ -11,7 +11,7 @@ export default function About() {
 
 
   return (
-    <section className={styles.about} style={{ WebkitMaskImage }} ref={clipRef} >
+    <section id='about' className={styles.about} style={{ WebkitMaskImage }} ref={clipRef} >
       <h2>About Me</h2>
       <p>
         Hey there! I&apos;m a tech support provider turned aspiring software engineer/web developer living in beautiful rural Saskatchewan, Canada. My love for coding started in high school, where I competed in Vex Robotics and tinkered with arduino projects. Fast forward to now, and I&apos;ve completed a Diploma in Web Development from BrainStation, and have been running my own tech support business and working on small software projects on the side.
