@@ -1,22 +1,50 @@
 @use './partials/all' as *;
 
 .header {
-  padding: 1rem;
+  padding: .5rem;
   position: sticky;
   top: 0;
+
+  @include tablet {
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+
+  @include desktop {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.link {
+  text-decoration: none;
 }
 
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 
   &List {
     display: flex;
-    gap: 2rem;
+    gap: .75rem;
+
+    @include tablet {
+      gap: 1.5rem;
+    }
   }
 
   &Item {
     color: white;
     text-decoration: none;
+    font-size: .75rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
+}
+
+.invisibleLogo {
+  visibility: hidden;
 }
