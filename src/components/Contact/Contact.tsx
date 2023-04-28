@@ -10,15 +10,15 @@ export default function Contact() {
       <form className={styles.form} >
         <label >
           Email:
-          <input type="text" />
+          <input type="email" placeholder='your email here' />
         </label>
         <label >
           Subject:
-          <input type="text" />
+          <input type="text" defaultValue='Portfolio Inquiry' />
         </label>
         <label >
           Message:
-          <textarea />
+          <textarea placeholder='your message here' />
         </label>
         <button>SEND</button>
       </form>

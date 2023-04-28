@@ -6,6 +6,19 @@ body {
   background-color: $bg-primary;
   color: white;
   font-family: BebasNeue, Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px 2px $bg-primary;
+
+  @include tablet {
+    font-size: 1.25rem;
+  }
+
+  @include desktop {
+    font-size: 1.5rem;
+  }
+}
+
+section {
+  padding-top: 5rem;
 }
 
 .parallax-container {

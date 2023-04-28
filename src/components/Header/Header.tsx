@@ -3,12 +3,13 @@ import Link from "next/link";
 import Logo from "../Logo/Logo";
 
 export default function Header() {
+
   const scrollTo = (id: string) => {
     const window = document.querySelector('.parallax-container')!
     const el = document.getElementById(id)!
     window.scrollTo({
       behavior: 'smooth',
-      top: id ? el.offsetTop - el.getBoundingClientRect().height / 4 : 0
+      top: id ? el.offsetTop - 50 : 0
     })
   }
 
@@ -19,7 +20,6 @@ export default function Header() {
           <Logo />
         </Link>
         <ul className={styles.navList} >
-          <li><button className={styles.navItem} onClick={() => scrollTo('home')} >HOME</button></li>
           <li><button className={styles.navItem} onClick={() => scrollTo('about')} >ABOUT</button></li>
           <li><button className={styles.navItem} onClick={() => scrollTo('work')} >WORK</button></li>
           <li><button className={styles.navItem} onClick={() => scrollTo('contact')} >CONTACT ME</button></li>

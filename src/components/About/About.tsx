@@ -28,7 +28,9 @@ export default function About() {
       <div className={styles.skills}>
         <>
           {skills.map((skill, index) =>
-            <Image key={index} src={`/images/skills/${skill}.svg`} alt={skill} title={skill} width={50} height={50} />
+            <div key={index} className={styles.image}>
+              <Image src={`/images/skills/${skill}.svg`} alt={skill} title={skill} fill />
+            </div>
           )}
         </>
       </div>

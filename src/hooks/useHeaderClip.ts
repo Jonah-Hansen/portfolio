@@ -1,10 +1,10 @@
-import { RefObject, useLayoutEffect, useRef, useState } from "react";
+import { RefObject, useEffect, useRef, useState } from "react";
 
 export const useHeaderClip = (): [string, RefObject<HTMLElement>] => {
   const [maskImage, setMask] = useState<string>(`none`);
   const clipRef = useRef<HTMLElement>(null)
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const container = document.querySelector('.parallax-container')
     if (container) {
       const handleScroll = () => {

@@ -1,24 +1,27 @@
 @use './partials/all' as *;
 
 .header {
-  padding: .5rem;
+  padding: $edge-mobile;
   position: sticky;
   top: 0;
   z-index: 1;
 
   @include tablet {
-    padding: 1rem;
     padding-bottom: 0;
+    padding-left: $edge-tablet;
+    padding-right: $edge-tablet;
   }
 
   @include desktop {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: $edge-desktop;
+    padding-right: $edge-desktop;
   }
 }
 
 .link {
   text-decoration: none;
+  text-shadow: 1px 1px 2px $bg-primary;
+
 }
 
 .nav {
@@ -40,8 +43,9 @@
     background-color: transparent;
     border: none;
     font: inherit;
-    font-size: .75rem;
+    font-size: 1rem;
     padding: 0;
+    text-shadow: 1px 1px 2px $bg-primary;
 
     @include tablet {
       font-size: 1.5rem;

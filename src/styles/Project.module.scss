@@ -7,6 +7,7 @@
   align-items: center;
   position: relative;
   padding-top: 4rem;
+  width: 30%;
 
 
   &::after {
@@ -14,16 +15,25 @@
     aspect-ratio: 1;
     width: 100%;
     background: url('/images/Atmosphere.svg') no-repeat top 30% left 49%;
-    background-size: 90%;
+    background-size: 100%;
     position: absolute;
     z-index: -1;
-    filter: blur(20px);
+    filter: blur(15px);
+
+    @include tablet {
+      filter: blur(25px);
+    }
+
+    @include desktop {
+      filter: blur(35px);
+    }
   }
 }
 
 .preview {
+  position: relative;
   aspect-ratio: 1;
-  height: 80%;
+  width: 100%;
   border-radius: 50%;
   overflow: hidden;
 }
