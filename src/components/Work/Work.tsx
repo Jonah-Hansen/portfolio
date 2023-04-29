@@ -5,7 +5,7 @@ import Project from '../Project/Project';
 export default function Work() {
   const [WebkitMaskImage, clipRef] = useHeaderClip()
 
-  const projects = ['everyday Todo', 'Easy Instrumentals', 'Pool Passes App']
+  const projects = ['Everyday Todo', 'Easy Instrumentals', 'Pool Passes App']
 
   return (
     <section id='work' className={styles.work} style={{ WebkitMaskImage }} ref={clipRef} >

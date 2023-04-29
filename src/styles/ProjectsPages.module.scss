@@ -1,0 +1,87 @@
+@use './partials/all' as *;
+
+.main {
+
+  &::after {
+    content: '';
+    background: url('/images/starField.svg');
+    background-size: 320px;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  padding: $edge-mobile;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include tablet {
+    padding: $edge-tablet;
+  }
+
+  @include desktop {
+    padding-left: $edge-desktop;
+    padding-right: $edge-desktop;
+  }
+
+  & p {
+    padding-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  & h1 {
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+  & h2 {
+    font-size: 1.5rem;
+    padding-top: 3rem;
+  }
+
+  & a {
+    color: $text-1;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+
+  @include desktop {
+    flex-direction: row;
+
+    & div:last-child {
+      flex-shrink: 1.08;
+    }
+  }
+
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.screenshots {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.image {
+  position: relative;
+  aspect-ratio: 1;
+  width: 100%;
+}
