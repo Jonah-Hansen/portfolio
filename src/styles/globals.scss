@@ -81,13 +81,22 @@ section {
   align-items: center;
   justify-content: center;
   aspect-ratio: 1;
-  width: 600px;
+  width: 1000px;
   position: absolute;
-  top: 400px;
+  top: 500px;
   left: 50%;
   z-index: -1;
   transform-style: preserve-3d;
   transform: translateZ(-10px) scale(2) translateX(-25%);
+
+  @include tablet {
+    width: 1500px;
+  }
+
+  @include desktop {
+    width: 2500px;
+    top: 700px;
+  }
 
   &::before {
     content: '';
@@ -113,11 +122,21 @@ section {
   aspect-ratio: 1;
   height: 75px;
   position: absolute;
-  top: 275px;
+  top: 350px;
   left: 50%;
   transform-style: preserve-3d;
   z-index: -1;
   transform: translateZ(-10px) scale(2) translateX(-40%);
   background: url('/images/Astronauty.svg') no-repeat center;
   background-size: contain;
+
+  @include tablet {
+    height: 100px;
+    top: 300px;
+  }
+
+  @include desktop {
+    height: 150px;
+    top: 350px;
+  }
 }
