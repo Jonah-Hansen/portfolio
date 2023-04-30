@@ -37,8 +37,8 @@ export default function EasyInstrumentals() {
         </div>
       </div>
       <div className={styles.screenshots}>
-        <div className={styles.image}><Image src={'/images/projects/easyinstrumentals1.jpg'} fill alt='everyday todo screenshot' /> </div>
-        <div className={styles.image}><Image src={'/images/projects/easyinstrumentals.jpg'} fill alt='everyday todo screenshot' /> </div>
+        <div className={styles.image}><Image src={'/images/projects/EasyInstrumentals1.jpg'} fill alt='easy instrumentals screenshot' /> </div>
+        <div className={styles.image}><Image src={'/images/projects/EasyInstrumentals.jpg'} fill alt='easy instrumentals screenshot' /> </div>
       </div>
     </main>
   )
