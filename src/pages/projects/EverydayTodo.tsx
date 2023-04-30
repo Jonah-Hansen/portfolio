@@ -37,8 +37,8 @@ export default function EverydayTodo() {
         </div>
       </div>
       <div className={styles.screenshots}>
-        <div className={styles.image}><Image src={'/images/projects/everydaytodo1.jpg'} fill alt='everyday todo screenshot' /> </div>
-        <div className={styles.image}><Image src={'/images/projects/everydaytodo.jpg'} fill alt='everyday todo screenshot' /> </div>
+        <div className={styles.image}><Image src={'/images/projects/EverydayTodo1.JPG'} fill alt='everyday todo screenshot' /> </div>
+        <div className={styles.image}><Image src={'/images/projects/EverydayTodo.JPG'} fill alt='everyday todo screenshot' /> </div>
       </div>
     </main>
   )

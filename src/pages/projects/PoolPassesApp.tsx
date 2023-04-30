@@ -36,7 +36,7 @@ export default function PoolPassesApp() {
         </div>
       </div>
       <div className={styles.screenshots}>
-        <div className={styles.image}><Image src={'/images/projects/poolpassesapp.jpg'} fill alt='everyday todo screenshot' /> </div>
+        <div className={styles.image}><Image src={'/images/projects/PoolPassesApp.JPG'} fill alt='pool passes app screenshot' /> </div>
       </div>
     </main>
   )
