@@ -2,13 +2,27 @@
 
 .home {
   margin: auto;
-  margin-top: 4rem;
-  width: 40rem;
+  padding-left: $edge-mobile;
+  padding-right: $edge-mobile;
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 1rem;
+  min-height: 100vh;
 
-  font-size: 1.75rem;
+  @include tablet {
+    padding-left: $edge-tablet;
+    padding-right: $edge-tablet;
+    max-width: 50rem;
+    font-size: 1.75rem;
+  }
+
+  @include desktop {
+    padding-left: $edge-desktop;
+    padding-right: $edge-desktop;
+    max-width: 85rem;
+    font-size: 2.5rem;
+  }
 }
 
 .alt1 {

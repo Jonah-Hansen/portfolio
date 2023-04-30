@@ -1,11 +1,22 @@
 //create map to iterate over for font types
-$fontWeights: ("Light": 300, "Regular": 400, "Medium": 500, "SemiBold": 600, "Bold": 700, "ExtraBold": 800);
+// $fontWeights: ("Light": 300, "Regular": 400, "Medium": 500, "SemiBold": 600, "Bold": 700, "ExtraBold": 800);
 
 //generate font-face for each font weight, using the font file with the name matching the type of font (regular, demi, bold, etc)
 // @each $type, $weight in $fontWeights {
 //   @font-face {
-//     font-family: "openSans";
-//     src: url("../../assets/fonts/OpenSans-#{$type}.ttf") format("truetype");
+//     font-family: "BebasNeue";
+//     src: url("@/public/fonts/OpenSans-#{$type}.ttf") format("truetype");
 //     font-weight: $weight;
 //   }
 // }
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../../../public/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../public/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}

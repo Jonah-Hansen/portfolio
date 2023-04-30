@@ -1,0 +1,53 @@
+@use './partials/all' as *;
+
+.about {
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Roboto', sans-serif;
+  padding-left: $edge-mobile;
+  padding-right: $edge-mobile;
+  padding-bottom: 3rem;
+
+  & h2 {
+    font-family: BebasNeue, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+
+    @include desktop {
+      font-size: 2rem;
+    }
+  }
+
+  @include tablet {
+    padding-left: $edge-tablet;
+    padding-right: $edge-tablet;
+  }
+
+  @include desktop {
+    padding-left: $edge-desktop;
+    padding-right: $edge-desktop;
+  }
+}
+
+.skills {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image {
+  position: relative;
+  aspect-ratio: 1;
+  width: 50px;
+
+  @include tablet {
+    width: 75px;
+  }
+
+  @include desktop {
+    width: 100px;
+  }
+}

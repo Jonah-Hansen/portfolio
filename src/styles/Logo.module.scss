@@ -1,0 +1,14 @@
+@use './partials/all' as *;
+
+.logo {
+  color: $text-1;
+
+  &Alt {
+    color: black;
+    -webkit-text-stroke: .25px white;
+  }
+
+  @include tablet {
+    font-size: 3rem;
+  }
+}

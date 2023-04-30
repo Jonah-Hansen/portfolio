@@ -1,0 +1,25 @@
+@use './partials/all' as *;
+
+.work {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: $edge-mobile;
+  padding-right: $edge-mobile;
+
+  @include tablet {
+    padding-left: $edge-tablet;
+    padding-right: $edge-tablet;
+  }
+
+  @include desktop {
+    padding-left: $edge-desktop;
+    padding-right: $edge-desktop;
+  }
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}

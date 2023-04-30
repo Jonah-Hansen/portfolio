@@ -1,21 +1,58 @@
 @use './partials/all' as *;
 
 .header {
+  padding: $edge-mobile;
   position: sticky;
-  padding: 1rem;
+  top: 0;
+  z-index: 1;
+
+  @include tablet {
+    padding-bottom: 0;
+    padding-left: $edge-tablet;
+    padding-right: $edge-tablet;
+  }
+
+  @include desktop {
+    padding-left: $edge-desktop;
+    padding-right: $edge-desktop;
+  }
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 1px 1px 2px $bg-primary;
+
 }
 
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 
   &List {
     display: flex;
-    gap: 2rem;
+    gap: .75rem;
+
+    @include tablet {
+      gap: 1.5rem;
+    }
   }
 
   &Item {
     color: white;
-    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font: inherit;
+    font-size: 1rem;
+    padding: 0;
+    text-shadow: 1px 1px 2px $bg-primary;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
+}
+
+.invisibleLogo {
+  visibility: hidden;
 }
