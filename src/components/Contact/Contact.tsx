@@ -31,7 +31,13 @@ export default function Contact() {
           </a>
         </div>
         <div className={styles.link}>
-          <p>or send me an email at:</p>
+          <p>find me on Github at:</p>
+          <a target='_blank' rel='noopener noreferrer' href={'https://github.com/Jonah-Hansen'}  >
+            github.com/Jonah-Hansen
+          </a>
+        </div>
+        <div className={styles.link}>
+          <p>send me an email at:</p>
           <a href={'mailto:jonah.m.hansen@gmail.com'}  >
             jonah.m.hansen@gmail.com
           </a>
