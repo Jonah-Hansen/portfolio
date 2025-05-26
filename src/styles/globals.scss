@@ -19,6 +19,14 @@ body {
 
 section {
   padding-top: 5rem;
+  max-width: 1700px;
+  margin: auto;
+}
+
+.text-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 2rem;
 }
 
 .parallax-container {
