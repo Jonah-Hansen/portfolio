@@ -26,7 +26,7 @@ export default function EverydayTodo() {
 
           <h2>final notes:</h2>
           <p>I had an absolute blast working alongside Waseem! We both learned a ton as TailwindCSS and the entire Firebase ecosystem were new to both of us, and this was Waseem&apos;s first Typescript project.</p>
-          <p>While I spent most of my time learning Firestore and setting up the backend services, Waseem focused on the front-end, first designing the side in Figma, then building out components and implementing the backend as I showed him how it all worked. As we approached time to deploy and the backend services were fully functional, I shifted my focus to helping tidy up the front-end, and diagnosing bugs. </p>
+          <p>While I spent most of my time learning Firestore and setting up the backend services, Waseem focused on the front-end, first designing the site in Figma, then building out components and implementing the backend as I showed him how it all worked. As we approached time to deploy and the backend services were fully functional, I shifted my focus to helping tidy up the front-end, and diagnosing bugs. </p>
           <p>All in all, working on Everyday Todo was an amazing experience, ands we hope to continue development and adding new features as user feedback comes in.</p>
 
           <h2>links:</h2>
