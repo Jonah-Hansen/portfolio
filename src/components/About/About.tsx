@@ -56,13 +56,14 @@ export default function About() {
       <div className="text-bg">
         <h2>About Me</h2>
         <p>
-          I&apos;m a full-stack developer and game systems programmer with a
-          focus on scalable architecture and cross-platform Unity development.
-          I&apos;ve led projects ranging from indie narrative RPGs, to mobile
-          action RPGs and idle games, and backend-heavy browser-based MMOs.
-          Whether I&apos;m mentoring junior developers, refactoring legacy
-          systems, or writing custom tooling, I care deeply about writing clean,
-          maintainable code that supports creative vision and future growth.
+          I&apos;m a senior full-stack developer and game systems programmer
+          with a focus on scalable architecture and cross-platform Unity
+          development. I&apos;ve led projects ranging from indie narrative RPGs,
+          to mobile action RPGs and idle games, and backend-heavy browser-based
+          MMOs. Whether I&apos;m architecting new systems, mentoring junior
+          developers, refactoring legacy code, or working on custom tooling, I
+          care deeply about writing clean, maintainable code that supports
+          creative vision and future growth.
         </p>
         <p>
           I&apos;m a problem solver at heart, and I get a kick out of finding
@@ -70,13 +71,13 @@ export default function About() {
           studios, indie teams, and modding communities alike. Shaping gameplay,
           building infrastructure, and keeping things running when the edge
           cases get weird. If you need someone who can architect features, debug
-          production, and explain it all clearly in a tech doc, we&apos;ll
-          probably get along!
+          production, and explain it all clearly in a tech doc, I&apos;m your
+          guy!
         </p>
 
         <p>
-          Overall, I&apos;m excited to join a team where I can use my skills and
-          continue growing as a developer.
+          Overall, I like to flex my skills and continue learning and growing as
+          a developer.
         </p>
       </div>
 
